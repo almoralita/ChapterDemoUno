@@ -4,15 +4,15 @@ pipeline {
     stage('Buzz Buzz') {
       agent any
       steps {
-        echo 'Buzz Bees, Buzz!'
-        echo 'Bees Buzzing'
+        echo 'Buzz Bees'
+        echo 'Buzz'
       }
     }
 
     stage('Bees') {
       agent any
       steps {
-        echo 'Bees!'
+        echo 'Bees Buzzing!'
       }
     }
 
