@@ -1,11 +1,11 @@
 pipeline {
   agent any
   stages {
-    stage('Buzz Buzz') {
+    stage('Buzz Build') {
       agent any
       steps {
         echo 'Buzz Bees'
-        echo 'Buzz'
+        archiveArtifacts(artifacts: 'target/*.jar', fingerprint: true)
       }
     }
 
