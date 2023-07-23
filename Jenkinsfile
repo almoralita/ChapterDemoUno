@@ -4,7 +4,7 @@ pipeline {
     stage('Buzz Build') {
       agent any
       steps {
-        echo 'Buzz Bees'
+        sh './jenkins/build.sh'
         archiveArtifacts(artifacts: 'target/*.jar', fingerprint: true)
       }
     }
