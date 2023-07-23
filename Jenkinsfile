@@ -66,5 +66,11 @@ pipeline {
       }
     }
 
+    stage('Confirm deploy') {
+      steps {
+        input(message: 'Deploy to stage', ok: 'Yes, Let\'s do it!')
+      }
+    }
+
   }
 }
