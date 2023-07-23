@@ -10,6 +10,7 @@ pipeline {
     }
 
     stage('Bees') {
+      agent any
       steps {
         echo 'Bees!'
       }
